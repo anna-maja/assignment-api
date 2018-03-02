@@ -34,18 +34,15 @@
     while ($row = $table -> fetch_assoc()){
         $array[] = $row; // varje post lagras i en arraypost som heter row.
     } 
-    echo "<pre>";
-    echo print_r($array);
-    echo "</pre>";
+    // echo "<pre>";
+    // echo print_r($array);
+    // echo "</pre>";
 
 
-    // // Steg 4: Skapa JSON så att användare kan använda vår api. (Returns the JSON representation of a value)
-    // // http://php.net/manual/en/function.json-encode.php
-    // $json_string = json_encode($array, JSON_PRETTY_PRINT);
+    // Steg 4: Skapa JSON så att användare kan använda vår api. (Returns the JSON representation of a value)
+    $json_string = json_encode($array, JSON_PRETTY_PRINT);
     
-    // // Skriv ut JSON-Strängen för att testa att den funkar
-    // echo $json_string;
+    // Skriv ut JSON-Strängen för att testa att den funkar
+    echo $json_string;
     
-
-
 ?>

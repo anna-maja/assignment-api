@@ -1,8 +1,12 @@
 <?php 
     define("PAGE_TITLE", "Order");
     include "header.php";
-    
 ?>
+<div class="jumbotron">
+    <!-- Samma format men olika text -->
+    <h1>Retrobutikens beställningssida</h1>
+</div>
+
 
 <?php
     require_once('connect.php');

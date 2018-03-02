@@ -1,8 +1,12 @@
 <?php 
     define("PAGE_TITLE", "Orderbekräftelse");
-    include "header.php";
-    
+    include "header.php";  
 ?>
+
+<div class="jumbotron">
+    <!-- Samma format men olika text -->
+    <h1>Orderbekräftelse</h1>
+</div>
 
 <?php
 // Funktion för validering av formuläret
